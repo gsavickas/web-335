@@ -1,6 +1,6 @@
 /*
 ============================================
-; Title:  Personal Portfolio
+; Title:  Assignment 2.2
 ; Author: Grayton Savickas
 ; Date:   28 March 2021
 ; Modified By:
