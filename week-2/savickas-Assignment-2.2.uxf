@@ -1,0 +1,26 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>250</x><y>230</y><w>210</w><h>100</h></coordinates><panel_attributes>CUSTOMER
+--
+id
+first_name
+last_name
+date_of_birth
+user_name
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>580</x><y>230</y><w>210</w><h>120</h></coordinates><panel_attributes>INVOICE
+--
+id
+date_created
+date_shipped
+subtotal
+tax
+total</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>580</x><y>460</y><w>210</w><h>70</h></coordinates><panel_attributes>LINE ITEM
+--
+id
+name
+price
+quantity</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>450</x><y>270</y><w>150</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=0..1
+m2=0..*
+can have &gt;</panel_attributes><additional_attributes>10;20;130;20</additional_attributes></element><element><id>Relation</id><coordinates><x>670</x><y>340</y><w>90</w><h>140</h></coordinates><panel_attributes>lt=-
+m1=0..1
+m2=0..*
+can have &gt;</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element></diagram>
