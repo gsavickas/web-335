@@ -1,0 +1,56 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>110</x><y>0</y><w>210</w><h>70</h></coordinates><panel_attributes>BOOK
+--
+
+group=1</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>880</x><y>0</y><w>210</w><h>70</h></coordinates><panel_attributes>PUBLISHER
+--
+
+group=1</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>510</x><y>0</y><w>210</w><h>70</h></coordinates><panel_attributes>AUTHOR
+--
+
+group=1</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>310</x><y>20</y><w>220</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=1.*
+m2=1.*
+has &gt;
+group=1</panel_attributes><additional_attributes>200;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>710</x><y>20</y><w>190</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=1.*
+m2=0..*
+can &gt;
+group=1</panel_attributes><additional_attributes>10;20;170;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>880</x><y>530</y><w>260</w><h>180</h></coordinates><panel_attributes>PUBLISHER
+--
+   "publisher_name": "Dell",
+   "publisher_code": "33556",
+   "publisher_address": [
+      {
+         "street": "800 East Ninety-sixth Street",
+         city: "Indianapolis",
+         "state": "IN",
+         "zip": "46240",
+         "country": "United States"
+      } 
+group=2</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>530</y><w>240</w><h>120</h></coordinates><panel_attributes>AUTHOR
+--
+{
+   "author_first_name": "Kurt",
+   "author_last_name": "Vonnegut",
+   "author_phone": "555-555-5555",
+   "author_email": "kvonnegut@gmail.com"
+}
+group=2</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>710</x><y>550</y><w>190</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=1.*
+m2=0..*
+can &gt;
+group=2</panel_attributes><additional_attributes>10;20;170;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>530</y><w>230</w><h>110</h></coordinates><panel_attributes>BOOK
+--
+{
+   "book_name": "Slaughterhouse-Five",
+   "book_price": "25.00",
+   "book_isbn": "0-385-31208-3"
+}
+group=2</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>310</x><y>550</y><w>190</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=1.*
+m2=1.*
+has &gt;
+group=2</panel_attributes><additional_attributes>170;20;10;20</additional_attributes></element><element><id>UMLNote</id><coordinates><x>430</x><y>150</y><w>360</w><h>60</h></coordinates><panel_attributes>Business Rules
+   1. one or more BOOKS have one or more AUTHORs
+   2. one or more AUTHORs can have multiple PUBLISHERs
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element></diagram>
